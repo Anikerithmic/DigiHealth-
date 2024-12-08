@@ -1,0 +1,44 @@
+.patient-navbar {
+    display: flex;
+    justify-content: space-between; /* This will separate left and right content */
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff; /* You can change the background color */
+  }
+  
+  .patient-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .patient-navbar li {
+    margin-right: 20px; /* Add some space between the list items */
+  }
+  
+  .navbar-left ul {
+    justify-content: flex-start; /* Align items to the left */
+  }
+  
+  .navbar-right ul {
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0056b3; /* Button background */
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #003f7f; /* Darker on hover */
+  }
+  
+  .navbar-right .nav-link {
+    margin-left: auto; /* This ensures logout stays on the right */
+  }
+  
