@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminDashboard from './components/AdminDashboard';
 import PatientDashboard from './components/PatientDashboard';
 import SuccessPage from "./components/SuccessPage";
+import RegisterPatient from './components/RegisterPatient';
+import RegisterDoctor from './components/RegisterDoctor';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Route path="/admin-dashboard" element={<AdminDashboard />} />
       <Route path="/patient-dashboard" element={<PatientDashboard />} />
       <Route path="/success" element={<SuccessPage />} />
+      <Route path="/register-patient" element={<RegisterPatient />} />
+      <Route path="/register-doctor" element={<RegisterDoctor />} />
     </Routes>
   </Router>
   )
