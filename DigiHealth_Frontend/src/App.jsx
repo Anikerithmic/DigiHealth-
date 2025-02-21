@@ -8,21 +8,18 @@ import PatientDashboard from './components/PatientDashboard';
 import SuccessPage from "./components/SuccessPage";
 import DoctorDashboard from "./components/DoctorDashboard";
 
-
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <Router>
-  <Routes>
-    <Route path="/admin-dashboard" element={<AdminDashboard />} />
-    <Route path="/patient-dashboard" element={<PatientDashboard />} />
-    <Route path="/success" element={<SuccessPage />} />
-    <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
- 
-  </Routes>
-</Router>
-
+    <Router>
+    <Routes>
+      <Route path="/admin-dashboard" element={<AdminDashboard />} />
+      <Route path="/patient-dashboard" element={<PatientDashboard />} />
+      <Route path="/success" element={<SuccessPage />} />
+      <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
+    </Routes>
+  </Router>
   )
 }
 
